@@ -38,7 +38,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import Slide from '@mui/material/Slide';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About Us', 'Producs', 'Industries', 'FAQs', 'Contact Us'];
