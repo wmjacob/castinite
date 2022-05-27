@@ -43,7 +43,7 @@ const drawerWidth = 240;
 const navItems = ['Home', 'About Us', 'Producs', 'Industries', 'FAQs', 'Contact Us'];
 const heroItems = [
   { src: 'hero1.jpg', caption: <>Industry Leading<br />Experience</> },
-  { src: 'hero2.jpg', caption: <>International<br />Leading Experience</> },
+  { src: 'hero2.jpg', caption: <>International<br />Service</> },
   { src: 'hero3.jpg', caption: <>Low Cost<br/>Solutions</> },
 ];
 
