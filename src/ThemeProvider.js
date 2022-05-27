@@ -1,14 +1,21 @@
-import { blue, pink, grey } from '@mui/material/colors'
+import { grey } from '@mui/material/colors'
 import CssBaseline from '@mui/material/CssBaseline'
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles'
 
 const theme = createTheme({
+
   palette: {
-    primary: blue,
-    secondary: pink,
-    text: {
-      primary: grey[900],
-      secondary: grey[700],
+    primary: {
+      light: '#68b36b',
+      main: '#43a047',
+      dark: '#2e7031',
+      contrastText: grey[200],
+    },
+    secondary: {
+      light: '#155fa0',
+      main: '#1e88e5',
+      dark: '#4b9fea',
+      contrastText: grey[200],
     },
     background: {
       default: '#eee',
@@ -36,9 +43,28 @@ const theme = createTheme({
       },
       styleOverrides: {},
     },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: '#fff',
+        },
+      },
+    },
     MuiTextField: {
       defaultProps: {
         variant: 'filled',
+      },
+    },
+  },
+  overrides: {
+    MuiTouchRipple: {
+      root: {
+        color: 'red',
+      },
+      colorSecondary: {
+        '&$checked': {
+          color: 'red',
+        },
       },
     },
   },
