@@ -138,7 +138,8 @@ export default function App() {
         <DrawerHeader />
         <Box pt={15} sx={{ backgroundImage: `linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),url('${heroItem.src}')`, backgroundPosition: 'center', transition: 'background-image 5s ease-in-out', minHeight: '600px', backgroundSize: 'cover', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }} >
           <Container maxWidth="sm">
-            <Typography sx={{ color: '#fff', textAlign: 'center', textTransform: 'uppercase' }} variant="h2">{heroItem.caption}</Typography>
+            <Typography sx={{ display: { xs: 'none', 'md': 'block' }, color: '#fff', textAlign: 'center', textTransform: 'uppercase' }} variant="h2">{heroItem.caption}</Typography>
+            <Typography sx={{ display: { md: 'none' }, color: '#fff', textAlign: 'center', textTransform: 'uppercase' }} variant="h3">{heroItem.caption}</Typography>
           </Container>
           <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             <Fab
@@ -165,7 +166,7 @@ export default function App() {
         </Box>
         <Box sx={{ p: 3 }}>
           {/* <Typography variant="body1">Precision Polymer Casting, LLC provides Castinite high precision polymer concrete castings and precision machine grouts and fillers for the machine tool, instrumentation, semi-conductor and other industries. Castinite castings are created using the third generation of Cast to Tolerance™ ( CTT™) manufacturing technology. Enhancements to this manufacturing process include a climate controlled environment and segregated raw materials. In addition, castings are created with an improved quality of epoxy resin and hardener, mixed with proprietary additives. We use the highest quality mineral aggregates found in the industry.</Typography> */}
-          <Typography mb={3} sx={{ textAlign: 'center', textTransform: 'none' }} variant="h4">Precision&nbsp;Polymer Casting&nbsp;Professionals</Typography>
+          <Typography mb={3} sx={{ textAlign: 'center', textTransform: 'none' }} variant="h4">Precision Polymer Casting Professionals</Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} lg={3}>
               <Card sx={{ height: '100%' }}>
